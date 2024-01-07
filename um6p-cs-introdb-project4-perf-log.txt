@@ -1,0 +1,63 @@
+mysql> use deliverysystem;
+Database changed
+
+mysql> EXPLAIN SELECT  Cid FROM customer WHERE Cname = 'John';
++----+-------------+----------+------------+------+---------------+------+---------+------+--------+----------+-------------+
+| id | select_type | table    | partitions | type | possible_keys | key  | key_len | ref  | rows   | filtered | Extra       |
++----+-------------+----------+------------+------+---------------+------+---------+------+--------+----------+-------------+
+|  1 | SIMPLE      | customer | NULL       | ALL  | NULL          | NULL | NULL    | NULL | 992218 |    10.00 | Using where |
++----+-------------+----------+------------+------+---------------+------+---------+------+--------+----------+-------------+
+1 row in set, 1 warning (0.00 sec)
+
+mysql> SELECT C.Cname
+    -> FROM customer C
+    -> JOIN Orders O ON O.CID = C.CID
+    -> GROUP BY C.CID
+    -> HAVING COUNT(O.Order_ID) >399;
++------------+
+| Cname      |
++------------+
+| Édith      |
+| Susan      |
+| Célina     |
+| Anaïs      |
+| Véronique  |
+| Marie      |
++------------+
+6 rows in set (1.82 sec)
+
+
+
+
+
+
+mysql> CREATE INDEX CNAME ON Customer(Cid,CName);
+Query OK, 0 rows affected (7.31 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql>  EXPLAIN SELECT  Cid FROM customer WHERE Cname = 'John';
++----+-------------+----------+------------+-------+---------------+-------+---------+------+--------+----------+--------------------------+
+| id | select_type | table    | partitions | type  | possible_keys | key   | key_len | ref  | rows   | filtered | Extra                    |
++----+-------------+----------+------------+-------+---------------+-------+---------+------+--------+----------+--------------------------+
+|  1 | SIMPLE      | customer | NULL       | index | CNAME         | CNAME | 807     | NULL | 992218 |    10.00 | Using where; Using index |
++----+-------------+----------+------------+-------+---------------+-------+---------+------+--------+----------+--------------------------+
+1 row in set, 1 warning (0.00 sec)
+
+mysql> SELECT C.Cname
+    -> FROM customer C
+    -> JOIN Orders O ON O.CID = C.CID
+    -> GROUP BY C.CID
+    -> HAVING COUNT(O.Order_ID) >399;
++------------+
+| Cname      |
++------------+
+| Édith      |
+| Susan      |
+| Célina     |
+| Anaïs      |
+| Véronique  |
+| Marie      |
++------------+
+6 rows in set (1.78 sec)
+
+mysql> Terminal close -- exit!
