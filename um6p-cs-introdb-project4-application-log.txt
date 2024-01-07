@@ -1,0 +1,199 @@
+
+ 1)Home Page - Gateway to Seamless Food Experience(HomePage.php)
+Description: 
+
+The Home Page serves as the virtual threshold welcoming customers into the immersive world of our food delivery system. Designed for optimal user engagement, it boasts a plethora of features and functionalities strategically positioned to enhance the overall user experience. Let's delve into the key elements that make this page a robust starting point:
+
+Striking Title:
+
+A prominently displayed title captures attention, instantly communicating the essence of the application and setting the stage for a delightful culinary journey.
+
+Intuitive Navigation Links:
+
+Home: Positioned for accessibility, the "Home" link provides users with a quick route back to the main page, ensuring a seamless and intuitive navigation experience.
+
+Contact Us: Empowering users to connect with support or seek assistance effortlessly, the "Contact Us" link establishes a channel for effective communication.
+
+Sign Up: Positioned strategically to encourage new user registrations, the "Sign Up" button beckons those eager to join our growing community, unlocking a plethora of personalized features.
+
+Login: A well-placed "Login" button caters to existing users, facilitating a swift and secure entry into their personalized accounts.
+Visual Appeal:
+
+Thoughtfully curated visual elements, such as engaging graphics and an aesthetically pleasing layout, contribute to an inviting ambiance, enticing users to explore further.
+
+Interactive Elements:
+
+The Home Page is enriched with interactive components, fostering engagement and providing a dynamic experience. Whether it's a visually appealing carousel of featured restaurants or enticing promotional banners, these elements captivate the user's attention and encourage further exploration.
+
+Seamless Onboarding:
+
+Beyond navigation, the Home Page serves as the starting point for users embarking on their food delivery journey. Clear calls-to-action for sign-up and login guide users through a hassle-free onboarding process, ensuring swift access to the platform's offerings.
+2)Selection Page - Tailoring Your Experience(Role.php)
+
+Description: The Role Selection Page is your starting point, where you choose whether you're a customer craving delicious meals or a delivery person ready to fulfill orders. It's a simple yet crucial step that directs you to the right place to input your information
+
+Choose Your Role:
+
+When you land here, you're prompted to select if you're a customer or a delivery person.
+Customer Path:
+
+If you're a customer, click to enter your details and on a straightforward form.
+
+Delivery Personnel Path:
+
+Opting to be a delivery person? No problem. Click to fill out a quick form with necessary details like contact information 
+Easy Navigation:
+
+Buttons for customers and delivery personnel are visually distinct, guiding you seamlessly to the next step.
+
+3)Customer Login and Welcome Page - Accessing Culinary Delights(Log.php)
+
+Description: Once a user selects the role of a customer, they are seamlessly directed to the Customer Login Page, where they can securely log in using their email and password. After successfully logging in, a warm and inviting "Welcome" message awaits, setting the stage for a personalized and enjoyable culinary experience. 
+
+Secure Authentication:
+
+The login process ensures the security of user accounts, employing robust authentication mechanisms to protect personal information.
+
+4)Delivery Personnel Login and Welcome Page (DeliveryLog.php)
+
+Description: For users taking on the role of delivery personnel, the journey begins with the Delivery Personnel Login Page. Here, they are prompted to enter their Employee ID, Employee Name, and password to access their personalized portal. Upon successful login, a gratifying "Welcome" message awaits, laying the groundwork for a fulfilling and efficient delivery experience. 
+
+Employee Credentials:
+
+The login process requires the input of specific employee details, such as Employee ID and Employee Name, ensuring accurate identification and access.
+
+Secure Access:
+
+Robust security measures are in place to safeguard employee accounts, with password authentication providing an additional layer of protection.
+
+5)User Registration Page - Joining Our Culinary Community(Sign.php)
+
+Description: The User Registration Page is the entry point for new individuals eager to become a part of our vibrant culinary community. This page facilitates the seamless onboarding of new users, requiring them to input essential information such as a unique username, a secure password, email address, and phone number
+
+Username Selection:
+
+New users are prompted to choose a unique and personalized username that will distinguish them within our community.
+Secure Password Creation:
+
+
+The page guides users to create a secure password
+Email Address Input:
+
+Users are required to provide a valid email address, serving as a primary contact method and facilitating communication between the platform and the user.
+
+Phone Number Submission:
+
+In addition to email, users input their phone numbers.
+
+6)Delivery Personnel Order Information Page(DeliveryDashboard.php)
+Description: The Delivery Personnel Order Information Page is a dedicated space crafted for our delivery team, providing them with a comprehensive view of the orders they are tasked to deliver
+
+Order Information Table:
+
+A structured table displays pertinent information, including:
+
+Customer ID: Uniquely identifies the customer associated with the order.
+Customer Name: Displays the name of the customer for easy recognition.
+Order ID: A unique identifier for each order, facilitating quick reference.
+Order City: Specifies the city where the delivery is to be made.
+Vehicle ID: Identifies the delivery vehicle assigned to the order.
+Payment Time: Indicates the time the payment was processed.
+
+Intuitive Navigation:
+
+The page features intuitive navigation elements, allowing delivery personnel to easily access and manage their assigned orders with efficiency.
+
+Real-Time Updates:
+Order information is updated in real-time, providing delivery personnel with the most current details and minimizing potential delays.
+
+7)Restaurants Selection Page (UserDashboard.php)
+
+Description: The Restaurants Selection Page is the culinary playground for our customers, where they can explore a diverse of restaurants. Featuring a user-friendly interface, this page showcases a list of restaurants, each accompanied by the restaurant name and city. The header boasts essential navigation options, including a "Log Out" button for user convenience and a "Details" button for additional insights
+Title Display:
+
+Positioned at the center of the page, a bold and inviting "Our Restaurants" title captures attention, setting the stage for a delightful culinary exploration.
+
+Restaurant Showcase:
+
+The main section of the page is dedicated to showcasing a curated list of restaurants, each accompanied by the:
+Restaurant Name: Clearly displayed, allowing customers to quickly identify and select their preferred dining option.
+City: Specifies the location of each restaurant, providing context for customers seeking local culinary experiences.
+
+Dynamic Updates:
+
+The list of restaurants may  dynamically updated, ensuring that customers have access to the latest additions and culinary offerings within the platform
+
+7)User Details Page (UserDetails.php)
+
+Description: The User Details Page is a personalized space that provides customers with a comprehensive overview of their account information. Displayed in a neatly organized table, this page showcases the user's details, including User ID, Name, Email, and Phone Number. Additionally, the page features a section displaying the customer's previous orders. In case of no previous orders, a clear message communicates "No orders found." The page also offers a convenient link to navigate back to the Restaurants Selection Page
+
+8)Menu Selection and Cart Management (Menu.php)
+
+Description: The Menu Selection Page is where the culinary journey truly unfolds, allowing customers to explore and choose from a delightful list of meals offered by their selected restaurant. This page is thoughtfully designed to present all available meals, each accompanied by an "Add to Cart" button for convenient selection. Customers can add multiple items to their cart before seamlessly transitioning to the Cart Page by clicking on an image of a shopping bag.
+
+Restaurant-Specific Menu:
+
+Upon selecting a restaurant, customers are automatically directed to the Menu Selection Page, where they can peruse a comprehensive list of meals offered by the chosen establishment.
+
+Meal Display:
+
+Each meal is presented with appealing visuals, accompanied by details such as the meal name, description, and price, creating an enticing visual representation of the culinary offerings.
+
+Add to Cart Button:
+
+Positioned prominently beneath each meal, the "Add to Cart" button empowers customers to effortlessly select their desired items, building a personalized order.
+
+Cart Management:
+
+As customers click the "Add to Cart" button, their selected items are dynamically added to the cart, providing a real-time summary of their culinary choices. A running total and the ability to adjust quantities contribute to a seamless cart management experience.
+
+Visual Shopping Bag Shortcut:
+
+A strategically placed image of a shopping bag serves as a visual shortcut to the customer's cart. Clicking on this image allows users to view and manage their selected items in preparation for the payment process.
+
+Direct Transition to Payment Page:
+
+By clicking on the shopping bag image, customers are seamlessly directed to the Payment Page, streamlining the transition from menu selection to the checkout process.
+
+
+9) View Cart (ViewCart.php)
+
+Description: The View Cart Page offers customers a snapshot of their culinary selections, displaying the meals they've chosen. If the cart is empty, a clear message communicates "Your shopping cart is empty." This page features two essential buttons—one to proceed to the payment process and another to navigate back to the home page.
+
+10)Payment Page (Payment.php)
+
+Description: The Payment Page is the final destination in the customer's culinary journey, where they fill in essential details for a seamless transaction. Featuring fields for first name, last name, card number, security code, and expiration date, this page also displays the total price of the order. Two buttons, "Cancel Payment" and "Pay," offer customers the choice to finalize their order or opt out. Upon successful payment, a prompt assures customers of a successful transaction
+
+Payment Information Fields:
+
+The page provides clear fields for customers to input their payment information, including:
+First Name: For personal identification.
+
+Last Name: Completing the customer's full name for transaction verification.
+Card Number: Securely entering the payment card details.
+Security Code: Inputting the three-digit code for additional security.
+Expiration Date: Selecting the expiration date of the payment card.
+Total Price Display:
+
+The total price of the order is prominently displayed, ensuring transparency and allowing customers to verify their transaction amount.
+Cancel Payment Button:
+
+For flexibility, a "Cancel Payment" button is available, giving customers the option to review or adjust their order before finalizing the transaction.
+Pay Button:
+
+The primary call-to-action, the "Pay" button, allows customers to proceed with the payment, initiating the transaction process.
+Prompt for Successful Payment:
+
+Upon successful completion of the payment, a prompt appears, assuring customers that their payment was successful
+Security Measures:
+
+The page incorporates secure data entry practices to ensure the confidentiality and protection of customer payment information.
+
+
+
+
+
+
+
+
+
